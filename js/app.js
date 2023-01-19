@@ -165,7 +165,7 @@ function pageTransition () { // Käytetään tätä functiota sivuvaihdoissa
                     if ( counter < 0) {
                         clearInterval(interval)
                         if (currTarget.contains("projects")) {
-                            window.location = "http://127.0.0.1:5500/projects.html"
+                            window.location = "projects.html"
                         }
                         if (currTarget.contains("login")) {
                             window.location = "http://127.0.0.1:5500/login.html"
@@ -229,21 +229,21 @@ function main () {
     
     
     // Index sivulla ollessa se käynnistää starCountdown function
-    if ( window.location.href === "http://127.0.0.1:5500/") {
+    
         
 
         
-        startCountdown();
+    startCountdown();
         
      
     // muilla sivuilla käynnistyy sivunvaihto ja navbar functiot
-    } else {
+    
         
-        pageTransition();
-        mobileNavbar();
+    pageTransition();
+    mobileNavbar();
         
         
-    }
+    
 
     scrollAnimation();
     
