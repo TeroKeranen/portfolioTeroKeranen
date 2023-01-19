@@ -113,6 +113,16 @@ ul li button {
     padding: 1.5rem;
 }
 
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 .nav-toggle {
@@ -419,15 +429,17 @@ ul li button {
     }
 
     .logo {
-        display: flex;
+        
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background: rgb(29, 29, 29);
+        margin: 50px 0;
         width: 100%;
         padding: 1.5rem;
-
-
+        
     }
-
+    
     .nav-header h3 {
         font-size: 2rem;
 
