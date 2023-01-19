@@ -94,7 +94,7 @@ function welcomePageTransition () {
     
     setInterval(function() {
         
-        window.location = "http://127.0.0.1:5500/welcome.html"
+        window.location = "http://127.0.0.1:5500/projects.html"
         
          
     },10000)
@@ -129,7 +129,7 @@ function startCountdown() {
             speed = 300;
             starField(speed,height,width);
             clearInterval(interval); // nollataan interval
-            window.location = "http://127.0.0.1:5500/welcome.html"
+            window.location = "http://127.0.0.1:5500/projects.html"
         }
     },1000)
 }
