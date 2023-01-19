@@ -205,6 +205,20 @@ function pageTransition () { // Käytetään tätä functiota sivuvaihdoissa
 
 }
 
+function mobileResize () {
+    let x = 0;
+    
+    window.onresize = function () {
+        
+        let text = x += 1
+        
+
+        if (text > 10) {
+            location.reload();
+        }
+    }
+}
+
 // Funktio jolla tulee tekstit näkyviin kun tarpeeksi scrollaa
 function scrollAnimation () {
     window.addEventListener('scroll', () => {
@@ -233,25 +247,29 @@ function scrollAnimation () {
 // let transition_el = document.querySelector('.transition')
 function main () {
     
-    
+    mobileResize();
     // Index sivulla ollessa se käynnistää starCountdown function
     
-        
+    
 
+    if (window.location.href === "index.html") {
+        startCountdown();
+    } else {
+        pageTransition();
+        mobileNavbar();
         
-    startCountdown();
+        
+    
+
+        scrollAnimation();
+    }
+    
         
      
     // muilla sivuilla käynnistyy sivunvaihto ja navbar functiot
     
         
-    pageTransition();
-    mobileNavbar();
-        
-        
     
-
-    scrollAnimation();
     
     
 
