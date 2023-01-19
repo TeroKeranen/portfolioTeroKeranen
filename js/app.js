@@ -253,7 +253,7 @@ function scrollAnimation () {
 
 // let transition_el = document.querySelector('.transition')
 function main () {
-    
+    console.log(document.URL);
     mobileResize();
     oriantationChange();
     // Index sivulla ollessa se käynnistää starCountdown function
