@@ -29,31 +29,34 @@ ul li button {
 
 .fade-container {
     position:absolute;
-    top: 20px;
-    left: 23%;
+    top: 10%;
+    left: 0;
+    right: 0;
+    
     
     /* background-color: #2f2f2f; */
-    height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .fade {
+    text-align: center;
     
-    position: relative;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    text-decoration: none;
+    
     
 
 }
 
 .fade h2 {
     color:white;
-    position: absolute;
+    
     text-align: center;
     line-height: 500px;
-    font-size: 130px;
+    font-size: 2rem;
     text-transform: uppercase;
     transform: scale(1);
     transition: all 1s;
@@ -374,6 +377,26 @@ ul li button {
 @media screen and (min-width:785px) {
 
 
+
+    
+
+    .fade h2 {
+        color: white;
+
+        text-align: center;
+        line-height: 500px;
+        font-size: 4rem;
+        text-transform: uppercase;
+        transform: scale(1);
+        transition: all 1s;
+
+
+
+
+
+
+
+    }
     .nav-center {
         z-index: 10;
         width: 8%;

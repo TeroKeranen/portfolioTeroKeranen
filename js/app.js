@@ -190,18 +190,7 @@ function pageTransition () { // Käytetään tätä functiota sivuvaihdoissa
 
     }
 
-    // Jos näytön koko muuttuu käytön aikana niin sivu lataa itsensä uudestaan
-    // window.onresize = function () {
-    //     if (window.innerWidth != -10) {
-    //         location.reload();
-    //     }
-    // }
-
-    // window.onresize = function () {
-    //     if (screen.width !== window.width) {
-    //         location.reload();
-    //     }
-    // }
+    
 
 }
 
