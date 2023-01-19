@@ -168,10 +168,10 @@ function pageTransition () { // Käytetään tätä functiota sivuvaihdoissa
                             window.location = "projects.html"
                         }
                         if (currTarget.contains("login")) {
-                            window.location = "http://127.0.0.1:5500/login.html"
+                            window.location = "login.html" // http://127.0.0.1:5500/login.html
                         }
                         if (currTarget.contains("register")) {
-                            window.location = "http://127.0.0.1:5500/register.html"
+                            window.location = "register.html" // http://127.0.0.1:5500/register.html
                         }
                         
 
