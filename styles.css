@@ -28,10 +28,10 @@ ul li button {
 }
 
 .fade-container {
-    position: absolute;
+    position:absolute;
     top: 20px;
     left: 23%;
-
+    
     /* background-color: #2f2f2f; */
     height: 100vh;
     display: flex;
@@ -40,16 +40,16 @@ ul li button {
 }
 
 .fade {
-
+    
     position: relative;
     width: 500px;
     height: 500px;
-
+    
 
 }
 
 .fade h2 {
-    color: white;
+    color:white;
     position: absolute;
     text-align: center;
     line-height: 500px;
@@ -59,11 +59,11 @@ ul li button {
     transition: all 1s;
 
 
-
-
-
-
-
+    
+    
+    
+    
+    
 }
 
 .transition-1 {
@@ -85,3 +85,445 @@ ul li button {
     pointer-events: all;
 }
 
+.row {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.nav-center {
+    background: #181818;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+    padding: 1.5rem;
+}
+
+
+
+.nav-toggle {
+    cursor: pointer;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.links a {
+    text-transform: capitalize;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+
+
+}
+
+
+/* Kun hampurilaisnappia painaa niin links divin pituus muuttuu */
+.show-links {
+    height: 10rem;
+}
+
+.canvas-wrap {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    /* asetetaan starfield functiota varten*/
+    top: 0;
+    right: 0;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    color: white;
+
+}
+
+.testing {
+
+    display: flex;
+    justify-content: center;
+
+    color: rgb(110, 110, 110);
+    font-size: 1rem;
+    font-style: italic;
+    padding: 0.5rem;
+
+
+}
+
+.letters:before {
+    content: "<p> Welcome to my site <p>";
+    animation: animate 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animate {
+    0% {
+        content: "<"
+    }
+
+    4.7% {
+        content: "<p"
+    }
+
+    7.7% {
+        content: "<p>"
+    }
+
+    12.4% {
+        content: "<p> W"
+    }
+
+    17.1% {
+        content: "<p> We"
+    }
+
+    21.8% {
+        content: "<p> Wel"
+    }
+
+    26.5% {
+        content: "<p> Welc"
+    }
+
+    31.2% {
+        content: "<p> Welco"
+    }
+
+    35.9% {
+        content: "<p> Welcom"
+    }
+
+    40.6% {
+        content: "<p> Welcome"
+    }
+
+    45.3% {
+        content: "<p> Welcome t"
+    }
+
+    50% {
+        content: "<p> Welcome to"
+    }
+
+    54.7% {
+        content: "<p> Welcome to m"
+    }
+
+    59.4% {
+        content: "<p> Welcome to my"
+    }
+
+    64.1% {
+        content: "<p> Welcome to my s"
+    }
+
+    68.8% {
+        content: "<p> Welcome to my si"
+    }
+
+    73.5% {
+        content: "<p> Welcome to my sit"
+    }
+
+    78.2% {
+        content: "<p> Welcome to my site"
+    }
+
+    82.9% {
+        content: "<p> Welcome to my site <"
+    }
+
+    87% {
+        content: "<p> Welcome to my site <p"
+    }
+
+    92.3% {
+        content: "<p> Welcome to my site <p>"
+    }
+}
+
+.intro {
+
+
+
+    height: 400px;
+    margin: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.intro h1 {
+
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+
+
+.intro p {
+    width: 80%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.row {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.col {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px 0;
+
+}
+
+.col p {
+    width: 80%;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/* 
+/////////////////////////////////////////////////////////
+//////////// PROJECTS PAGE CSS /////////////////////////
+////////////////////////////////////////////////////////
+*/
+
+.intro-projects-page {
+
+
+
+    height: 700px;
+    margin: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.intro-projects-page h1 {
+
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+
+
+.intro-projects-page p {
+    width: 80%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (min-width:785px) {
+
+
+    .nav-center {
+        z-index: 10;
+        width: 8%;
+        height: 1000px;
+        padding: 0;
+
+
+        position: fixed;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+
+    }
+
+    .nav-header {
+        width: 100%;
+
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        background: rgb(29, 29, 29);
+        width: 100%;
+        padding: 1.5rem;
+
+
+    }
+
+    .nav-header h3 {
+        font-size: 2rem;
+
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+
+        width: 100%;
+        padding: 0;
+        height: auto;
+        margin-top: 50px;
+
+
+
+    }
+
+    .testing {
+        margin-top: 30px;
+    }
+
+
+
+
+    .transition-1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 101;
+        background-color: white;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease-in;
+
+    }
+
+    .transition-1.is-active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+
+    ul li {
+        font-size: 2rem;
+    }
+
+    .page-container {
+        display: flex;
+
+
+
+
+
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .container {
+        position: absolute;
+        /* asetetaan starfield functiota varten*/
+        top: 0;
+        right: 0;
+        width: 90%;
+        right: 0;
+        position: absolute;
+        color: white;
+    }
+
+
+
+    .intro {
+
+
+        height: 600px;
+        margin-top: 10px;
+
+    }
+
+
+    .intro p {
+
+
+        margin: 20px 0;
+
+    }
+
+
+
+    .second {
+
+        margin: 50px 0;
+
+        height: 600px;
+
+    }
+
+    .second p {
+        font-size: 1.5rem;
+        width: 60%;
+        margin: 50px 0;
+        letter-spacing: 3px;
+    }
+
+
+
+
+
+
+    ul li button:hover {
+        color: blue;
+    }
+
+
+
+}
