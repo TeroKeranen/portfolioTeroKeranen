@@ -162,19 +162,22 @@ function scrollAnimation () {
 function main () {
     
     
+    // Index sivulla ollessa se käynnistää starCountdown function
+    if ( window.location.href === "http://127.0.0.1:5500/index.html") {
         
 
         
-    startCountdown();
+        startCountdown();
         
      
-    
+    // muilla sivuilla käynnistyy sivunvaihto ja navbar functiot
+    } else {
         
         
         
         
         
-   
+    }
 
     scrollAnimation();
     

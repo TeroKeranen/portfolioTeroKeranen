@@ -252,17 +252,21 @@ function main () {
     
     
 
-    if (window.location.href === "index.html") {
-        startCountdown();
-    } else {
-        pageTransition();
-        mobileNavbar();
+    
+    startCountdown();
+    
+        
+    
+    
+
+    pageTransition();
+    mobileNavbar();
         
         
     
 
-        scrollAnimation();
-    }
+    scrollAnimation();
+
     
         
      
