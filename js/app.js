@@ -1,5 +1,6 @@
 function starField (getSpeed, height,width) {
 
+    
 
 let canvas = document.getElementById('stars');
 canvas.width = width;
@@ -19,6 +20,9 @@ for (let i = 0; i < numStars; i++) {
 
 
 function Star () {
+    
+    
+
     this.x = Math.random() * canvas.width;
     this.y = Math.random () * canvas.height;
     this.z = Math.random () * canvas.width;
@@ -32,6 +36,8 @@ function Star () {
     }
     this.show = function () {
 
+        
+
         let x,y,s;
 
         x = (this.x - centerX) * (fl/this.z);
@@ -43,7 +49,7 @@ function Star () {
         s = size * (fl/this.z);
 
         c.beginPath();
-        c.fillStyle = "white";
+        c.fillStyle = "white"; // "white"
         c.arc(x,y,s,0,Math.PI*2);
         c.fill();
     }
@@ -148,7 +154,7 @@ function pageTransition () { // Käytetään tätä functiota sivuvaihdoissa
         let height = pageContainer.scrollHeight; // Otetaan classin page-container scrollheight omaan muuttujaan jotta sitä voidaan käyttää apuna starField function kanssa
         let width = pageContainer.scrollWidth; // Otetaan classin page-container scrollheight omaan muuttujaan jotta sitä voidaan käyttää apuna starField function kanssa
         let transition_el = document.querySelector('.transition') // otetaan class transition omaan muuttujaan jotta siitä voidaan poistaa apu classeja
-        starField(10, height,width)
+        starField(2, height,width)
         let a = document.querySelectorAll("button")
 
         a.forEach((e) => {
@@ -229,7 +235,7 @@ function scrollAnimation () {
             // Otetaan e:n elementteistä tietoa omaan muuttujaan
             let contentPosition = e.getBoundingClientRect().top;
 
-            if(contentPosition < screenPosition) {
+            if(contentPosition < screenPosition - 150 ) {
                 e.classList.add('active');
 
             } else {
@@ -240,9 +246,12 @@ function scrollAnimation () {
 }
 
 
+
+
+
 // let transition_el = document.querySelector('.transition')
 function main () {
-    console.log(document.URL);
+    
     mobileResize();
     oriantationChange();
     // Index sivulla ollessa se käynnistää starCountdown function

@@ -325,24 +325,36 @@ ul li button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
 }
 
 .col {
-
+    border: 1px solid red;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    margin: 40px 0;
-
+    margin: 20px 0;
+    
 }
 
 .col p {
     width: 80%;
     font-size: 1.5rem;
     letter-spacing: 2px;
+}
+
+.project {
+    margin: 20px 30px;
+}
+.project-img {
+    width: 100%;
+    border: 1px solid red;;
+}
+.project-img img {
+    width: 400px;
 }
 
 /* 
@@ -356,8 +368,8 @@ ul li button {
 
 
     height: 700px;
-    margin: 40px 0;
-
+    margin: 40px 0 50px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
