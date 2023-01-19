@@ -197,11 +197,11 @@ function pageTransition () { // Käytetään tätä functiota sivuvaihdoissa
     //     }
     // }
 
-    window.onresize = function () {
-        if (screen.width !== window.width) {
-            location.reload();
-        }
-    }
+    // window.onresize = function () {
+    //     if (screen.width !== window.width) {
+    //         location.reload();
+    //     }
+    // }
 
 }
 
