@@ -1,3 +1,4 @@
+console.log("mororororor")
 function starField (getSpeed, height,width) {
 
 
