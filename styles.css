@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Handlee', cursive;
+}
+
+body {
+    background: #1d1d1d;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+ul li button {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+    width: 100%;
+    border-top: 0.5px solid rgb(87, 85, 85);
+    border-bottom: 0.5px solid rgb(121, 118, 118);
+}
+
+.fade-container {
+    position: absolute;
+    top: 20px;
+    left: 23%;
+
+    /* background-color: #2f2f2f; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fade {
+
+    position: relative;
+    width: 500px;
+    height: 500px;
+
+
+}
+
+.fade h2 {
+    color: white;
+    position: absolute;
+    text-align: center;
+    line-height: 500px;
+    font-size: 130px;
+    text-transform: uppercase;
+    transform: scale(1);
+    transition: all 1s;
+
+
+
+
+
+
+
+}
+
+.transition-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in;
+
+}
+
+.transition-1.is-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
