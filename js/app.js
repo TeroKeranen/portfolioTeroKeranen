@@ -219,6 +219,13 @@ function mobileResize () {
     }
 }
 
+function oriantationChange () {
+    window.addEventListener('orientationchange', function () {
+        console.log("tehty")
+        window.location.reload();
+    })
+}
+
 // Funktio jolla tulee tekstit näkyviin kun tarpeeksi scrollaa
 function scrollAnimation () {
     window.addEventListener('scroll', () => {
@@ -248,6 +255,7 @@ function scrollAnimation () {
 function main () {
     
     mobileResize();
+    oriantationChange();
     // Index sivulla ollessa se käynnistää starCountdown function
     
     
