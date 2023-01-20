@@ -88,7 +88,8 @@ ul li button {
     pointer-events: all;
 }
 
-.row {
+.row,
+.row-projects {
     opacity: 0;
     transform: scale(0.1);
     transition: all 1s ease-in-out;
@@ -330,7 +331,7 @@ ul li button {
 }
 
 .col {
-    border: 1px solid red;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -348,14 +349,50 @@ ul li button {
 
 .project {
     margin: 20px 30px;
+    width: 70%;
+    text-align: center;
 }
 .project-img {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    border: 1px solid red;;
+
 }
 .project-img img {
-    width: 400px;
+    width: 80%;
 }
+
+
+.project-info p {
+    
+    margin: 10px auto;
+    width: 80%;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.row-projects {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.col-projects {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0;
+    
+}
+
 
 /* 
 /////////////////////////////////////////////////////////
@@ -571,6 +608,33 @@ ul li button {
         color: blue;
     }
 
+    /* 
+    ///////////////////////////////////////
+    ///////////projects page//////////////
+    /////////////////////////////////////
+    */
+    
+        
+        .project {
+            margin: 20px 30px;
+            width: 100%;
+            
+        }
+    
+        .project-img {
+            flex-direction: row;
+        }
 
-
+        .project-img img {
+            width: 500px;
+        }
+    
+        
+        .project-info p {
+            margin: 0 auto;  
+        }
+    
+       
+    
+        
 }

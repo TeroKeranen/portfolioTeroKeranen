@@ -227,10 +227,19 @@ function scrollAnimation () {
 
         // Otetaan sivusotn row classit omaan muuttujaan
         let contents = document.querySelectorAll('.row');
+        let contentsProjects = document.querySelectorAll('.row-projects');
         //Otetaan windowsin innerheight omaan muuttujaan
         let screenPosition = window.innerHeight;
 
-        // Luupataan row classit läpi forEachloopilla
+        contentsProjects.forEach((e) => {
+            let contentPosition = e.getBoundingClientRect().top;
+            if (contentPosition < screenPosition - 150) {
+                e.classList.add('active')
+            } else {
+                e.classList.remove('active');
+            }
+        })
+        // Luupataan welcomepagen row classit läpi forEachloopilla
         contents.forEach((e) => {
             // Otetaan e:n elementteistä tietoa omaan muuttujaan
             let contentPosition = e.getBoundingClientRect().top;
