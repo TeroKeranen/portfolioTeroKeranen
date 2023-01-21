@@ -166,7 +166,7 @@ function pageTransition () { // Käytetään tätä functiota sivuvaihdoissa
                 const interval = setInterval(() => {
                     counter--
                     if (counter <3) {
-                        starField(300,height,width);
+                        starField(200,height,width);
                     }
                     if ( counter < 0) {
                         clearInterval(interval)
@@ -244,7 +244,7 @@ function scrollAnimation () {
             // Otetaan e:n elementteistä tietoa omaan muuttujaan
             let contentPosition = e.getBoundingClientRect().top;
 
-            if(contentPosition < screenPosition - 150 ) {
+            if(contentPosition < screenPosition - 110 ) {
                 e.classList.add('active');
 
             } else {

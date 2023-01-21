@@ -333,14 +333,18 @@ ul li button {
 .col {
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
+    height: 400px;
     margin: 20px 0;
     
 }
 
+.col h1 {
+    margin: 30px 0;
+}
 .col p {
     width: 80%;
     font-size: 1.5rem;
