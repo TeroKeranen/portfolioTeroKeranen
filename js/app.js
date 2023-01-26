@@ -103,7 +103,7 @@ function welcomePageTransition () {
         window.location = "http://127.0.0.1:5500/projects.html"
         
          
-    },10000)
+    },1000)
     
 };
 
@@ -137,7 +137,7 @@ function startCountdown() {
             clearInterval(interval); // nollataan interval
             window.location = "welcome.html" // http://127.0.0.1:5500/welcome.html
         }
-    },1000)
+    },500)
 }
 
 ////////////////////////////////////////
